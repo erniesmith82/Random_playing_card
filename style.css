@@ -80,15 +80,43 @@ p {
   transform: translateY(4px);
 }
 
-@media screen and (orientation: portrait) {
-  #toolbar {
-    width: 100%;
-  }
+@media screen and (max-height: 450px) {
+
 }
-@media (max-width: 480px) {
-  img {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
+
+@media screen and (max-width: 768px) {
+ 
+
+.btn {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  width: 200px;
+  margin-top: 50px;
+  font-size: 30px;
+  margin-left: 75px;
+  font-family: serif;
+  box-shadow: 5px 5px;
+}
+img {
+  width: 1500px;
+  height: 800px;
+  margin-left: -350px;
+  transform: rotate(90deg);
+}
+.card {
+  background-color: white;
+  width: 325px;
+  height: 450px;
+  position: absolute;
+  margin-top: 45%;
+  margin-left: 25%;
+  border-radius: 20px;
+}
+.buttons {
+  display: inline-block;
+  margin: 0;
+  margin-left: 55px;
+  bottom: 0;
+  padding-bottom: 20%;
+}
 }
